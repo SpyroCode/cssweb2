@@ -9,6 +9,7 @@ h1{
   font-size: 2em;
   font-variant: small-caps;
   font-weight: bold;
+  text-shadow: 1px 2px 3px red;/*sombra en el texto en rojo*/
 }
 p{
   font-family: 'Indie Flower', cursive;
@@ -18,4 +19,9 @@ p{
   text-transform: capitalize;
   text-decoration: none; /*linias abajo o arriva como los enlaces*/
   letter-spacing: 5px; /*espacio entre letras*/
+}
+p::selection{
+  background: green;
+  color: black;
+  text-shadow: 1px 1px #fff;
 }
