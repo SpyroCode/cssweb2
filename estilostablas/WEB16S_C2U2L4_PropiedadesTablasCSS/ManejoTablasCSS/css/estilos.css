@@ -1,0 +1,22 @@
+table{
+    border-collapse: collapse;
+    width: 50%;
+}
+table, td, th {
+    border: 1px solid black;
+}
+td, th{
+    width: 50%;
+    height: 30px;
+}
+th{
+    text-align: right;
+    vertical-align: top;
+}
+td{
+    text-align: left;
+    vertical-align: bottom;
+}
+tr:nth-child(odd){
+    background-color: #d1d1d1;
+}
