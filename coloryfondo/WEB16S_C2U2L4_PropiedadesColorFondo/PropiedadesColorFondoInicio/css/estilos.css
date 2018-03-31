@@ -5,6 +5,7 @@ body {
 		margin: 0;
 		padding: 0;
 		text-align: left;
+		color: #000305;
 	}
 
 /* Encabezados */
@@ -26,6 +27,7 @@ a img {border: 0px; text-decoration: none;}
 a:link, a:visited {
 	padding: 0 1px;
 	text-decoration: underline;
+	color: rgb(51, 153, 204);
 }
 
 /* Párrafos */
@@ -111,6 +113,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 
 	/* Nav Principal*/
 	#banner nav {
+		background: hsl(0,0%, 21%);
 		font-size: 1.143em;
 		height: 40px;
 		line-height: 30px;
@@ -118,6 +121,9 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 		padding: 0;
 		text-align: center;
 		width: 800px;
+		border-radius: 5px;
+		-moz-border-radius:5px;
+		-webkit-border-radius:5px;
 	}
 
 	#banner nav ul {list-style: none; margin: 0 auto; width: 800px;}
@@ -128,20 +134,34 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 		height: 30px;
 		padding: 5px 1.5em;
 		text-decoration: none;
+		color: #fff;
 	}
-	#banner nav a:hover, #banner nav a:active,
-	#banner nav .active a:link, #banner nav .active a:visited {
+	#banner nav a:hover, #banner nav a:active{
+		border-radius: 15px 10px;
+		background: hsla(200,60%,50%,0.65);
 		text-shadow: none !important;
+	}
+	#banner nav .active a:link, #banner nav .active a:visited {
+		border-radius: 15px 10px 6px;
+		text-shadow: none !important;
+		background: #3399CC;
+		color: #fff;
+
+
 	}
 
 /*
 	Contenido Relacionado con el contenido principal
 *****************/
 #featured {
+	background: url(../img/css3_html5_badges.png) right top no-repeat,
+				url(../img/papel_doblado.jpg)left top repeat;
+	background-size: 150px,300px;		
 	margin-bottom: 2em;
 	overflow: hidden;
 	padding: 20px;
 	width: 760px;
+	border-radius:50px 30px 15px 5px; 
 }
 
 #featured h2 {font-size: 1.714em; margin-bottom: 0.333em;}
