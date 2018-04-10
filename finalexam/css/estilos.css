@@ -1,0 +1,109 @@
+* {
+    margin:  0;
+    padding: 0;
+  }
+body{
+    background-color: black;
+}  
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+header{
+    width: 80%;
+    height: 50px;
+    position: fixed;
+    top: 0px;
+    margin-left: 10%;
+    background-color: #5b7989;
+    border-radius: 10px 10px 0px 0px;
+
+}
+header h1{
+    color: white;
+    font-size: 20px;
+    position: fixed;
+    float: left;
+    margin-left: 25px;
+    margin-top: 10px;
+    font-family: 'Dancing Script', cursive;
+   
+
+
+}
+header nav{
+    position: relative;
+    display: inline;
+    color: white;
+    left: 85%;
+    top:15px;
+    
+    
+    
+}
+header nav a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Dancing Script', cursive;
+    font-size: 15px;
+}
+header nav a:hover{
+    color: grey;
+}
+footer{
+    width: 80%;
+    height: 100px;
+    position: fixed;
+    bottom: 0px;
+    margin-left: 10%;
+    background-color: #c6d5c5;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-flow: row wrap;
+} 
+aside{
+    width: 25%;
+    height: 100px;
+    
+  }
+ 
+  .enlaces{
+    
+    color: black;
+    text-align: left;
+    font-size: 12px;
+    font-family: 'Dancing Script', cursive;    
+    margin-top: 10px;
+    margin-left: 80px;
+    
+    
+  }
+  .enlaces ul{
+    list-style: none;
+  }
+  .enlaces h4{
+    font-family: 'Dancing Script', cursive;
+  }
+  .enlaces a{
+    color: black;
+    text-decoration: none;
+  }
+  .enlaces a:hover{
+    color: grey;
+  }
+  .redes{
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-left: 50px;
+    border-radius: 45px;
+  }
+  .redes img{
+    width: 25px;
+    height: 25px;
+  }
+  .redes:hover{
+    background-color: white;
+  }  
+.contenido{
+    background-color: white;
+    width: auto;
+    
+}
