@@ -14,6 +14,7 @@ header{
     margin-left: 10%;
     background-color: #5b7989;
     border-radius: 10px 10px 0px 0px;
+    z-index: 1;
 
 }
 header h1{
@@ -24,6 +25,8 @@ header h1{
     margin-left: 25px;
     margin-top: 10px;
     font-family: 'Dancing Script', cursive;
+    text-shadow: 2px;
+    
    
 
 
@@ -57,6 +60,7 @@ footer{
     border-radius: 0px 0px 10px 10px;
     display: flex;
     flex-flow: row wrap;
+    z-index: 1;
 } 
 aside{
     width: 25%;
@@ -103,7 +107,111 @@ aside{
     background-color: white;
   }  
 .contenido{
+    position: relative;
     background-color: white;
-    width: auto;
+    width: 80%;    
+    margin-top: 50px;
+    margin-left: 10%;
+    z-index: 0;
     
+}
+.line1{
+  background-color: #82c3a6;
+}
+.line1 img{
+  width: 920px;
+  height: 25%;
+  margin-top: 20px;
+  margin-left: 15%;
+  padding: 10px;
+}
+.line2{
+  background-color: #d5c75f;
+  display: flex;
+  height: 40%;
+    flex-flow: row wrap;
+  padding: 10px;
+  transition: rotate 5s;
+}
+.line2 img{
+  width: 400px;
+  height: auto;
+  
+}
+div [class*="bloque"]{
+  min-height: 200px;
+  flex: 1 2 40%;
+  padding: 1px;
+  margin-left: 10px;
+  text-align: center;
+  display: i
+
+}
+.bloque a{
+  
+  text-decoration: none;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  color: black;
+
+}
+.bloque a:hover{
+  color: white;
+}
+.line2 img:hover{
+  -ms-transform: rotate(15deg); /* IE 9 */
+    -webkit-transform: rotate(15deg); /* Safari 3-8 */
+    transform: rotate(15deg);
+}
+@media (max-width:420px){
+  header{
+    width: 100%;
+    margin-left: 0%;
+    height: 100px;
+    border-radius: 0px 0px 0px 0px;
+  }
+  header nav{
+    position: absolute;    
+    color: white;
+    left: 20%;
+    top:55px;   
+}
+footer{
+  width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 0px;
+  margin-left: 0%;
+  margin-top: 50px;
+  background-color: #c6d5c5;
+  border-radius: 0px 0px 0px 0px;
+  display: flex;
+  flex-flow: column wrap;
+  z-index: 1;
+}
+.contenido{
+  width: 100%;
+  margin-left: 0%;
+  top: 50px;
+} 
+.line1 img{
+  width: 320px;
+  margin-left: 0%;
+  padding: 20px;
+
+}
+.line2 img{
+  width: 320px;
+  margin-left: 0%;
+  padding: 0px;
+  margin-bottom: 10px;
+
+}
+
+.contenedor{
+  display: flex;
+  flex-flow: row wrap;
+}
+.imagen img{
+    width: 320px;
 }
